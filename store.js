@@ -1,5 +1,5 @@
 import { configureStore } from '@reduxjs/toolkit';
-import navReducer
+import navReducer from ''
 import rootReducer from './reducers'
 
 const store = configureStore({
