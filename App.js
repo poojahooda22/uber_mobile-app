@@ -33,7 +33,6 @@ export default function App() {
               }}
             />
           </Stack.Navigator>
-          {/* <HomeScreen /> */}
         </SafeAreaProvider>
       </NavigationContainer>      
     </Provider>
