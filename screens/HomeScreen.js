@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, SafeAreaView, Image } from 'react-native'
+import { StyleSheet, View, SafeAreaView, Image } from 'react-native'
 import React from 'react';
 import tw from 'twrnc';
 import NavOptions from '../components/NavOptions';
