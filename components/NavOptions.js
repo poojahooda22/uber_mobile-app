@@ -7,7 +7,7 @@ import { useNavigation } from '@react-navigation/native';
 const data = [
     { 
         id: "123",
-        title: "Gte a ride",
+        title: "Get a ride",
         image: "https://links.papareact.com/3pn",
         screen: "MapScreen",
     },
