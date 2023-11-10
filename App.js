@@ -1,5 +1,5 @@
 
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet} from 'react-native';
 import { Provider } from 'react-redux';
 import { store } from './store';
 import HomeScreen from './screens/HomeScreen';
@@ -32,7 +32,7 @@ export default function App() {
                 headerShown: false,
               }}
             />
-          </Stack.Navigator>
+          </Stack.Navigator> 
         </SafeAreaProvider>
       </NavigationContainer>      
     </Provider>
