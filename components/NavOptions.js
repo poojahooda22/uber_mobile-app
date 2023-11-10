@@ -32,19 +32,17 @@ const NavOptions = () => {
                 style={tw `p-2 pl-6 pb-8 pt-4 bg-gray-200 m-2 w-40`}>
                     onPress={() => navigation.navigate(item.screen)}
                <View>
-                <Image
-                    source={{ uri: item.image }}
-                    style={{ width: 120, height: 120, resizeMode: 'contain'}}
-                />
-                <Text style={tw `font-semibold mt-2 text-lg`}>
-                    {item.title}
-                </Text>
-                <Icon
-                    style={tw `p-2 bg-black rounded-full w-10 mt-4`}
-                    name="arrowright"
-                    color="white"
-                    type="antdesign"
-                />
+                    <Image
+                        source={{ uri: item.image }}
+                        style={{ width: 120, height: 120, resizeMode: 'contain'}}
+                    />
+                    <Text style={tw `font-semibold mt-2 text-lg`}>{item.title}</Text>
+                    <Icon
+                        style={tw `p-2 bg-black rounded-full w-10 mt-4`}
+                        name="arrowright"
+                        color="white"
+                        type="antdesign"
+                    />
                </View>
             </TouchableOpacity>
         )}
