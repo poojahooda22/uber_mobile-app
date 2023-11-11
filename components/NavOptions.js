@@ -29,8 +29,8 @@ const NavOptions = () => {
         keyExtractor={(item) => item.id}
         renderItem={({ item }) => (
             <TouchableOpacity 
-                style={tw `p-2 pl-6 pb-8 pt-4 bg-gray-200 m-2 w-40 rounded-4`}>
-                    {/* onPress={() => navigation.navigate(item.screen)} */}
+                onPress={() => navigation.navigate(item.screen)}
+                style={tw `p-2 pl-6 pb-8 pt-4 bg-gray-200 m-2 w-40 rounded-4`}>    
                <View>
                     <Image
                         source={{ uri: item.image }}
