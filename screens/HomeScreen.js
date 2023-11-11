@@ -37,10 +37,10 @@ const HomeScreen = () => {
           }}
           onPress={(data, details = null) => {
             dispatch(
-            //   setOrigin({
-            //   location: details.geometry.location,
-            //   description: data.description,
-            // })
+              setOrigin({
+              location: details.geometry.location,
+              description: data.description,
+            })
             );
             // dispatch(setDestination(null));
           }}
