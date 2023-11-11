@@ -42,7 +42,7 @@ const HomeScreen = () => {
               description: data.description,
             })
             );
-            // dispatch(setDestination(null));
+            dispatch(setDestination(null));
           }}
           fetchDetails={true}
           returnKeyType={"search"}
