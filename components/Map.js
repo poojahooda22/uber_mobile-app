@@ -11,7 +11,7 @@ const Map = () => {
         mapType='mutedStandard'
         initialRegion={{
             latitude:origin.location.lat,
-            longitude: origin.location.lng,
+            longitude: -122.4324,
             latitudeDelta: 0.0922,
             longitudeDelta: 0.0421,
         }}
