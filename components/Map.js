@@ -9,7 +9,7 @@ import MapViewDirections from 'react-native-maps-directions';
 const Map = () => {
 
     const origin = useSelector(selectOrigin);
-    // const destination = useSelector(selectDestination);
+    const destination = useSelector(selectDestination);
 
 
   return (
