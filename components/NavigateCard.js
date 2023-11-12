@@ -5,9 +5,12 @@ import tw from 'twrnc';
 import { GooglePlacesAutocomplete } from 'react-native-google-places-autocomplete';
 import { GOOGLE_MAPS_APIKEY } from '@env';
 import { setDestination } from '../slices/navSlice';
+import { useNavigation } from '@react-navigation/native';
 
 const NavigateCard = () => {
     const dispatch = useDispatch();
+    const navigation = useNavigation();
+
   return (
     <SafeAreaView style={tw`bg-white flex-1`}>
       <Text style={tw `text-center py-4 text-xl`}>Good Morning, Pooja</Text>
@@ -26,6 +29,7 @@ const NavigateCard = () => {
                             description: data.description,
                         })
                     );
+                    navigation.navigate('RideOptionsCard');
                 }}
                 query={{
                 key: GOOGLE_MAPS_APIKEY,
