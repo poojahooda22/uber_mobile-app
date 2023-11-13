@@ -48,13 +48,11 @@ const Map = () => {
 
         {origin?.location && (
             <Marker
-                coordinate={
-                    {
+                coordinate={{
                         latitude: origin.location.lat,
                         longitude: origin.location.lng,
                     
-                    }
-                }
+                    }}
                 title="Origin"
                 description={origin.description}
                 identifier="origin"
@@ -62,13 +60,11 @@ const Map = () => {
         )}
         {destination?.location && (
             <Marker
-                coordinate={
-                    {
+                coordinate={{
                         latitude: destination.location.lat,
                         longitude: destination.location.lng,
                     
-                    }
-                }
+                    }}
                 title="Destination"
                 description={destination.description}
                 identifier="destination"
