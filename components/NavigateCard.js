@@ -42,6 +42,10 @@ const NavigateCard = () => {
         </View>
         <NavFavourites />
       </View>
+
+      <View>
+        
+      </View>
     </SafeAreaView>
   )
 }
