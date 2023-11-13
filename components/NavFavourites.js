@@ -1,11 +1,31 @@
-import { StyleSheet, Text, View } from 'react-native'
+import { StyleSheet, Text, View, FlatList } from 'react-native'
 import React from 'react'
+
+const data = [
+    { 
+        id: "123",
+        icon: "home",
+        location: "home",
+        destination: "Code Street, Uttam nagar, India",
+    },
+    { 
+        id: "456",
+        icon: "briefcase",
+        location: "Work",
+        destination: "B-68, Gurgaon, Haryana",
+    },
+];
+
 
 const NavFavourites = () => {
   return (
-    <View>
-      <Text>NavFavourites</Text>
-    </View>
+    <FlatList 
+        data={data}
+        keyExtractor={(item) => item.id}
+        render
+    >
+      
+    </FlatList>
   )
 }
 
