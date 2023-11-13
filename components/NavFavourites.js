@@ -22,7 +22,11 @@ const NavFavourites = () => {
     <FlatList 
         data={data}
         keyExtractor={(item) => item.id}
-        render
+        renderItem={({item}) =>(
+            <TouchableOpacity>
+
+            </TouchableOpacity>
+        )}
     >
       
     </FlatList>
