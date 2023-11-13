@@ -44,7 +44,10 @@ const NavigateCard = () => {
       </View>
 
       <View>
-        
+        <TouchableOpacity>
+            <Icon />
+            <Text></Text>
+        </TouchableOpacity>
       </View>
     </SafeAreaView>
   )
