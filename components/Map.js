@@ -10,7 +10,7 @@ import { GOOGLE_MAPS_APIKEY } from '@env';
 const Map = () => {
 
     const origin = useSelector(selectOrigin);
-    // const destination = useSelector(selectDestination);
+    const destination = useSelector(selectDestination);
 
 
   return (
