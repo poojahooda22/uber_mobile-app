@@ -28,7 +28,7 @@ const data= [
   },
 ];
 
-// If surge pricing i
+// If surge pricing 
 const SURGE_CHARGE_RATE = 1.5;
 
 const RideOptionsCard = () => {
