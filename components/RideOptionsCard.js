@@ -80,8 +80,7 @@ const RideOptionsCard = () => {
                   currency: 'INR',
                 }).format(
                   (travelTimeInformation?.duration?.value * SURGE_CHARGE_RATE * multiplier) / 100
-                )
-          }
+                )  }
             </Text>
           </TouchableOpacity>
         )}
