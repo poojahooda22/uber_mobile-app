@@ -28,7 +28,7 @@ const data= [
   },
 ];
 
-// If surge pricing is on
+// If surge pricing
 const SURGE_CHARGE_RATE = 1.5;
 
 const RideOptionsCard = () => {
@@ -43,8 +43,7 @@ const RideOptionsCard = () => {
           onPress={() => navigation.navigate("NavigateCard")}
           style={tw `absolute top-3 left-5 z-50 p-3 rounded-full`}
         >
-          <Icon name="chevron-left" type="fontawesome" />
-          <Text></Text> 
+          <Icon name="chevron-left" type="fontawesome"/><Text></Text> 
         </TouchableOpacity>
         <Text style={tw `text-center py-5 text-xl`}>
           Select a Ride - {travelTimeInformation?.distance?.text}
@@ -76,11 +75,11 @@ const RideOptionsCard = () => {
             </View>
             <Text style={tw `text-xl`}>{
               new Intl.NumberFormat('en-gb', {
-                  style: 'currency',
-                  currency: 'INR',
-                }).format(
-                  (travelTimeInformation?.duration?.value * SURGE_CHARGE_RATE * multiplier) / 100
-                )}
+                style: 'currency',
+                currency: 'INR',
+              }).format(
+                (travelTimeInformation?.duration?.value * SURGE_CHARGE_RATE * multiplier) / 100
+              )}
             </Text>
           </TouchableOpacity>
         )}
